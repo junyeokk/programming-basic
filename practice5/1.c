@@ -1,16 +1,18 @@
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
 int main() {
-  int a, b, c;
-  char format[1001] = { 0 };
-  
-  scanf("%d %d %d", &a, &b, &c);
-  sprintf(format, "%%.%df", c);
+    int a, b, c, remainder;
 
-  double result = (double) a / b;
-  double scale = pow(10, c);
-  result = floor(result * scale) / scale;
+    scanf("%d %d %d", &a, &b, &c);
 
-  printf(format, result);
+    // 가수부 역할
+    printf("%d.", a / b);
+
+    // 지수부 역할
+    int temp = a % b * 10;
+    for (int i = 1; i <= c; i++) {
+        printf("%d", temp / b);
+        temp = temp % b * 10;
+    }
 }
