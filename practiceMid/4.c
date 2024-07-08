@@ -6,7 +6,7 @@ int sumOneBit(int x) {
 
     while (ux > 0) {
         count += ux & 1;
-        ux >>= 1; // 오른쪽으로 비트 이동
+        ux >>= 1;
     }
 
     return count;
