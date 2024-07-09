@@ -8,3 +8,6 @@
 - `day6`: x
 - `day7`: x
 - `day8`: midterm
+- `day9`: ch11_1, ch11_2
+- 중간 이전 과제: practice1, practice2, ...
+- 중간 이후 과제: lab1, lab2, ...
